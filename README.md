@@ -58,10 +58,10 @@
 
 ## 15. 트러블슈팅
 문제 1. VS Code 에서 깃허브 저장소와 연동할 때 오류 발생
-문제
+문제  
 PS C:\Workspace\E1_1> git clone https://github.com/yoga9137/AI_E1-1.git .           
-fatal: destination path '.' already exists and is not an empty directory.
-원인 가설
+fatal: destination path '.' already exists and is not an empty directory.  
+원인 가설  
 git clone 명령어는 지정한 대상 경로(여기서는 .으로 표현된 현재 디렉터리)가 완전히 빈 디렉터리여야만 실행됨.
 현재 폴더(C:\Workspace\E1_1) 내부에 이미 파일, 폴더 또는 Git 설정 파일(.git 등)이 존재하여 충돌이 발생한 것.
 해결
