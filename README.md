@@ -30,7 +30,7 @@
 - [ ] 포트 매핑 접속 확인
 - [ ] 바인드 마운트 변경 반영 확인
 - [ ] Docker 볼륨 영속성 확인
-- [ ] Git 설정
+- [x] Git 설정
 - [ ] GitHub 저장소 생성 및 push
 - [ ] VSCode GitHub 연동 확인
 
