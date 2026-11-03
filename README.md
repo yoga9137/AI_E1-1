@@ -103,12 +103,58 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 방법 2. 깃허브 저장소를 내 코드로 강제 덮어쓰기 (주의)  
 > git push origin main --force  
 
-
-문제2.  
+문제 3. 방법1. 을 사용할 경우, 아래의 오류 메시지 발생  
 문제  
-VS Code 에서 파일 수정후, 깃허브에 업로드가 안되는 문제 발생    
-  
+PS C:\Workspace\E1-1> git pull origin main --allow-unrelated-histories
+remote: Enumerating objects: 11, done.
+remote: Counting objects: 100% (11/11), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 9 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (9/9), 3.24 KiB | 100.00 KiB/s, done.
+From https://github.com/yoga9137/AI_E1-1
+ * branch            main       -> FETCH_HEAD
+   2846597..32c6d48  main       -> origin/main
+Updating 93cfe29..32c6d48
+error: Your local changes to the following files would be overwritten by merge:
+        README.md
+Please commit your changes or stash them before you merge.
+Aborting
 
+원인 가설  
+내 컴퓨터의 README.md 파일에 아직 커밋(저장)하지 않은 수정 내용이 남아있기 때문에 발생함.  
+이 상태에서 원격 저장소의 내용을 가져오면(pull), 내가 지금 수정한 내용이 덮어씌워져 사라질 수 있으므로  
+Git이 안전을 위해 작업을 중단(Aborting)시킨 것.
+
+해결  
+1단계: 내 컴퓨터의 변경 사항을 먼저 커밋(저장)하기  
+> git add README.md  
+> git commit -m "로컬 README 수정 및 트러블슈팅 기록"  
+
+2단계: 깃허브 내용 가져와서 합치기 (다시 pull)
+> git pull origin main --allow-unrelated-histories  
+
+3단계: (필수 체크) 충돌(Conflict) 해결하기  
+• 이 명령어를 치면 깃허브의 README.md와 내 컴퓨터의 README.md 내용이 겹치기 때문에  
+충돌(Conflict)이 발생할 확률이 높음  
+• 충돌이 발생하면 VS Code에서 README.md 파일이 열리며 초록색/파란색 코드로 현재 변경 사항과 수신 변경 사항을 비교해 줌  
+• 상단의 Accept Both Changes(양쪽 변경 사항 모두 수락)를 누르거나, 지우고 싶은 부분을 직접 텍스트로 정리한 후
+  파일을 저장(Ctrl + S)합니다.  
+• 충돌을 해결했다면 아래 명령어로 마무리 커밋을 합니다.  
+> git add README.md  
+> git commit -m "깃허브와 로컬 README 충돌 해결"  
+
+4단계: 깃허브에 최종 업로드하기  
+> git push origin main  
+
+참고. 만약 복잡한 과정 없이 깃허브 내용으로 덮어쓰고 싶다면?  
+현재 내 컴퓨터에 있는 README.md 수정본이 중요하지 않고,  
+깃허브 웹사이트에 올라와 있는 최신 코드를 그대로 가져와 덮어씌우고 싶다면  
+아래 명령어로 로컬 상태를 강제 초기화한 뒤 진행하셔도 됩니다.  
+(주의: 커밋하지 않은 내 현재 수정본은 사라집니다.)  
+> git reset --hard HEAD  
+> git pull origin main  
+  
+  
 ## 부록. AI 질문 (모델: GPT-5.5)
 
 질문1  
