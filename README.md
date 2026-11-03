@@ -153,8 +153,8 @@ Git이 안전을 위해 작업을 중단(Aborting)시킨 것.
 (주의: 커밋하지 않은 내 현재 수정본은 사라집니다.)  
 > git reset --hard HEAD  
 > git pull origin main  
-
-
+  
+  
 ## 부록. AI 질문 (모델: GPT-5.5)
 
 질문1  
