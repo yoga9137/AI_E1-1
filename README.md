@@ -13,6 +13,12 @@
 - Git/GitHub/VSCode 연동 확인
 
 ## 2. 실행 환경
+- OS: Windows / Ubuntu
+- Shell: bash / PowerShell
+- Terminal: Terminal / Windows Terminal / VSCode Terminal
+- Docker: `docker --version` 결과 |
+- Git: `git --version` 결과 |
+- VSCode: 사용.
 
 ## 3. 수행 항목 체크리스트
 
