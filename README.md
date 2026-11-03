@@ -57,6 +57,9 @@
 ## 14. 보안 및 개인정보 보호 점검
 
 ## 15. 트러블슈팅
+문제 1. VS Code 에서 깃허브 저장소와 연동할 때 오류 발생
+PS C:\Workspace\E1_1> git clone https://github.com/yoga9137/AI_E1-1.git .           
+fatal: destination path '.' already exists and is not an empty directory.
 
 
 ## 부록. AI 질문 (모델: GPT-5.5)
