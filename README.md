@@ -143,6 +143,9 @@ Git이 안전을 위해 작업을 중단(Aborting)시킨 것.
 > git add README.md  
 > git commit -m "깃허브와 로컬 README 충돌 해결"  
 
+4단계: 깃허브에 최종 업로드하기  
+> git push origin main  
+
 
 
 ## 부록. AI 질문 (모델: GPT-5.5)
