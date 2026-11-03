@@ -1,5 +1,5 @@
 # 미션1. 개발자용 작업실 구축 미션
-## Git 저장소: AI_E1-1 (https://github.com/yoga9137/AI_E1-1.git)
+## Git 저장소: AI_E1-1  
 
 ## 1. 프로젝트 개요
 이 저장소는 로컬 개발 워크스테이션 구축 과정을 기록한 저장소이다.
@@ -81,6 +81,28 @@ remote: Total 70 (delta 19), reused 0 (delta 0), pack-reused 0 (from 0)
 Receiving objects: 100% (70/70), 22.77 KiB | 5.69 MiB/s, done.  
 Resolving deltas: 100% (19/19), done.  
 PS C:\Workspace>  
+
+문제 2. VS Code 에서 깃허브로 Readme.md 파일을 업로드할 때 오류 발생  
+문제  
+PS C:\Workspace\E1-1> git push origin main  
+To https://github.com/yoga9137/AI_E1-1.git  
+ ! [rejected]        main -> main (non-fast-forward)  
+error: failed to push some refs to 'https://github.com/yoga9137/AI_E1-1.git'  
+hint: Updates were rejected because the tip of your current branch is behind  
+hint: its remote counterpart. If you want to integrate the remote changes,  
+hint: use 'git pull' before pushing again.  
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.  
+
+원인 가설  
+원격 깃허브 저장소(Remote)와 내 컴퓨터(Local)의 소스코드가 서로 동기화되지 않아서 발생한 push 거부 오류.  
+
+해결  
+방법 1. 깃허브 변경 사항을 내 컴퓨터로 가져와 합치기 (권장)  
+> git pull origin main --allow-unrelated-histories
+
+방법 2. 깃허브 저장소를 내 코드로 강제 덮어쓰기 (주의)  
+> git push origin main --force  
+
 
 문제2.  
 문제  
