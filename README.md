@@ -14,7 +14,7 @@
 
 ## 2. 실행 환경
 - OS: Windows / Ubuntu  
-- Shell: PowerShell / bash  
+- Shell: PowerShell / bash (Git Bash)    
 - Terminal: VSCode Terminal / Windows Terminal / Terminal  
 - Docker: `docker --version` 결과  
 - Git: git version 2.56.0.windows.4  
@@ -169,3 +169,7 @@ Git이 안전을 위해 작업을 중단(Aborting)시킨 것.
   
 ## 부록 B. 참고 내용  
 \- VS Code 에서 Commit 버튼을 누르기 전에 바로 위의 Message 에 수정한 내용을 꼭 넣을 것.
+\- 4. 터미널 조작 로그를 테스트하려면 VS Code -> Terminal -> New Terminal ->  
+      터미널 오른쪽 위의 ▼ 버튼 클릭 -> Launch Profile -> Git Bash 선택  
+
+
