@@ -82,7 +82,7 @@ Receiving objects: 100% (70/70), 22.77 KiB | 5.69 MiB/s, done.
 Resolving deltas: 100% (19/19), done.  
 PS C:\Workspace>  
   
-
+  
 문제 2. VS Code 에서 깃허브로 Readme.md 파일을 업로드할 때 오류 발생  
 문제  
 PS C:\Workspace\E1-1> git push origin main  
@@ -105,7 +105,7 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 > git push origin main --force 또는
 > git push origin main --f  
   
-  
+   
 문제 3. 방법1. 을 사용할 경우, 아래의 오류 메시지 발생  
 문제  
 PS C:\Workspace\E1-1> git pull origin main --allow-unrelated-histories
@@ -156,8 +156,8 @@ Git이 안전을 위해 작업을 중단(Aborting)시킨 것.
 (주의: 커밋하지 않은 내 현재 수정본은 사라집니다.)  
 > git reset --hard HEAD  
 > git pull origin main  
-  
-  
+   
+    
 ## 부록. AI 질문 (모델: GPT-5.5)
 
 질문1  
