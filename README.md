@@ -13,12 +13,12 @@
 - Git/GitHub/VSCode 연동 확인
 
 ## 2. 실행 환경
-- OS: Windows / Ubuntu
-- Shell: bash / PowerShell
-- Terminal: Terminal / Windows Terminal / VSCode Terminal
-- Docker: `docker --version` 결과
-- Git: git version 2.56.0.windows.4
-- VSCode: 1.144.1 (261c84cb1eddf11235f9e2c921425e9663fbe556, x64).
+- OS: Windows / Ubuntu  
+- Shell: PowerShell / bash  
+- Terminal: VSCode Terminal / Windows Terminal / Terminal  
+- Docker: `docker --version` 결과  
+- Git: git version 2.56.0.windows.4  
+- VSCode: 1.144.1 (261c84cb1eddf11235f9e2c921425e9663fbe556, x64).  
 
 ## 3. 수행 항목 체크리스트
 - [ ] 터미널로 디렉토리 생성 및 권한 확인
