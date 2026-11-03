@@ -96,7 +96,12 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 원인 가설  
 원격 깃허브 저장소(Remote)와 내 컴퓨터(Local)의 소스코드가 서로 동기화되지 않아서 발생한 push 거부 오류.  
 
+해결  
+방법 1. 깃허브 변경 사항을 내 컴퓨터로 가져와 합치기 (권장)  
+> git pull origin main --allow-unrelated-histories
 
+방법 2. 깃허브 저장소를 내 코드로 강제 덮어쓰기 (주의)  
+> git push origin main --force  
 
 
 ## 부록. AI 질문 (모델: GPT-5.5)
