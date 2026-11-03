@@ -17,7 +17,7 @@
 - Shell: bash / PowerShell
 - Terminal: Terminal / Windows Terminal / VSCode Terminal
 - Docker: `docker --version` 결과 |
-- Git: `git --version` 결과 |
+- Git: git version 2.56.0.windows.4
 - VSCode: 사용.
 
 ## 3. 수행 항목 체크리스트
