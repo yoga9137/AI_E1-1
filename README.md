@@ -102,7 +102,8 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 > git pull origin main --allow-unrelated-histories
 
 방법 2. 깃허브 저장소를 내 코드로 강제 덮어쓰기 (주의)  
-> git push origin main --force  
+> git push origin main --force 또는
+> git push origin main --f  
   
   
 문제 3. 방법1. 을 사용할 경우, 아래의 오류 메시지 발생  
