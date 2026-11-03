@@ -82,6 +82,18 @@ Receiving objects: 100% (70/70), 22.77 KiB | 5.69 MiB/s, done.
 Resolving deltas: 100% (19/19), done.  
 PS C:\Workspace>  
 
+문제 2. VS Code 에서 깃허브로 Readme.md 파일을 업로드할 때 오류 발생  
+문제  
+PS C:\Workspace\E1-1> git push origin main  
+To https://github.com/yoga9137/AI_E1-1.git  
+ ! [rejected]        main -> main (non-fast-forward)  
+error: failed to push some refs to 'https://github.com/yoga9137/AI_E1-1.git'  
+hint: Updates were rejected because the tip of your current branch is behind  
+hint: its remote counterpart. If you want to integrate the remote changes,  
+hint: use 'git pull' before pushing again.  
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.  
+
+
 ## 부록. AI 질문 (모델: GPT-5.5)
 
 질문1  
