@@ -62,10 +62,10 @@
 PS C:\Workspace\E1_1> git clone https://github.com/yoga9137/AI_E1-1.git .           
 fatal: destination path '.' already exists and is not an empty directory.  
 원인 가설  
-git clone 명령어는 지정한 대상 경로(여기서는 .으로 표현된 현재 디렉터리)가 완전히 빈 디렉터리여야만 실행됨.
-현재 폴더(C:\Workspace\E1_1) 내부에 이미 파일, 폴더 또는 Git 설정 파일(.git 등)이 존재하여 충돌이 발생한 것.
-해결
-C:\Workspace 폴더 내부의 E1_1 폴더를 삭제한 후, 다시 명령을 실행했다.
+git clone 명령어는 지정한 대상 경로(여기서는 .으로 표현된 현재 디렉터리)가 완전히 빈 디렉터리여야만 실행됨.  
+현재 폴더(C:\Workspace\E1_1) 내부에 이미 파일, 폴더 또는 Git 설정 파일(.git 등)이 존재하여 충돌이 발생한 것.  
+해결  
+C:\Workspace 폴더 내부의 E1_1 폴더를 삭제한 후, 다시 명령을 실행했다.  
 PS C:\Workspace> git config --global user.name yoga9137        
 PS C:\Workspace> git config --global user.email yoga9137@gmail.com                    
 PS C:\Workspace> git clone https://github.com/yoga9137/AI_E1-1.git .
