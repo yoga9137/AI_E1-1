@@ -16,7 +16,7 @@
 - OS: Windows / Ubuntu
 - Shell: bash / PowerShell
 - Terminal: Terminal / Windows Terminal / VSCode Terminal
-- Docker: `docker --version` 결과 |
+- Docker: `docker --version` 결과
 - Git: git version 2.56.0.windows.4
 - VSCode: 1.144.1 (261c84cb1eddf11235f9e2c921425e9663fbe556, x64).
 
