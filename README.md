@@ -108,20 +108,20 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
     
 문제 3. 방법1. 을 사용할 경우, 아래의 오류 메시지 발생  
 문제  
-PS C:\Workspace\E1-1> git pull origin main --allow-unrelated-histories
-remote: Enumerating objects: 11, done.
-remote: Counting objects: 100% (11/11), done.
-remote: Compressing objects: 100% (6/6), done.
-remote: Total 9 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
-Unpacking objects: 100% (9/9), 3.24 KiB | 100.00 KiB/s, done.
-From https://github.com/yoga9137/AI_E1-1
-   branch            main       -> FETCH_HEAD
-   2846597..32c6d48  main       -> origin/main
-Updating 93cfe29..32c6d48
-error: Your local changes to the following files would be overwritten by merge:
-        README.md
-Please commit your changes or stash them before you merge.
-Aborting
+PS C:\Workspace\E1-1> git pull origin main --allow-unrelated-histories  
+remote: Enumerating objects: 11, done.  
+remote: Counting objects: 100% (11/11), done.  
+remote: Compressing objects: 100% (6/6), done.  
+remote: Total 9 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)  
+Unpacking objects: 100% (9/9), 3.24 KiB | 100.00 KiB/s, done.  
+From https://github.com/yoga9137/AI_E1-1  
+   branch            main       -> FETCH_HEAD  
+   2846597..32c6d48  main       -> origin/main  
+Updating 93cfe29..32c6d48  
+error: Your local changes to the following files would be overwritten by merge:  
+        README.md  
+Please commit your changes or stash them before you merge.  
+Aborting  
 
 원인 가설  
 내 컴퓨터의 README.md 파일에 아직 커밋(저장)하지 않은 수정 내용이 남아있기 때문에 발생함.  
